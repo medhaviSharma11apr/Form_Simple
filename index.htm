@@ -25,10 +25,11 @@
             margin-right: 10px;
             height: 1000px;
             background-color: white;
+            padding-left: 2%;
         }
 
         input[type=text] {
-            width: 90%;
+            width: 98%;
             padding: 12px 20px;
             margin: 8px 0;
             box-sizing: border-box;
@@ -38,8 +39,38 @@
             outline: none;
         }
 
+        .describe {
+            width: 95%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #403d3d;
+
+            transition: 0.5s;
+            outline: none;
+
+        }
+
+        .describe select {
+            appearance: none;
+            color: aqua;
+        }
+
         input[type=text]:focus {
             border: 3px solid #555;
+        }
+
+        label {
+            display: block;
+        }
+
+        select {
+            appearance: none;
+            background: url('./download.jpeg') no-repeat right center;
+         
+            padding: 20px;
+            background-size: 12px;
+
         }
     </style>
 </head>
@@ -53,9 +84,23 @@
     <div class="main-form-body">
         <form action="">
             <label for="name">Name</label>
+
             <input type="text" id="name">
 
+            <label for="email">Email</label>
+            <input type="text" id="email">
 
+            <label for="age">Age</label>
+            <input type="text" id="age">
+
+            <label for="describe">Which option best describes you?</label>
+            <select name="" id="" class="describe">
+
+                <option value="Intern">Intern</option>
+                <option value="student">Student</option>
+                <option value="working">Working Professional</option>
+                <option value="seasoned">Seasoned Developer</option>
+            </select>
         </form>
     </div>
 </body>
