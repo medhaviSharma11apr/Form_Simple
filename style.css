@@ -1,0 +1,94 @@
+  body {
+            background-color: rgb(69, 168, 69);
+        }
+
+        .header {
+            height: 50px;
+            font-weight: 800;
+            font-size: 24px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .main-form-body {
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 960px;
+            background-color: white;
+            padding-left: 2%;
+        }
+
+        input[type=text] {
+            width: 98%;
+            padding: 12px 20px;
+          
+            margin: 8px 0;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #403d3d;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        .describe {
+            width: 95%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #403d3d;
+
+            transition: 0.5s;
+            outline: none;
+
+        }
+
+        .describe select {
+            appearance: none;
+            color: aqua;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+
+        label :nth-child(-n+4){
+            display: block;
+        }
+
+        select {
+              -webkit-appearance: none; /* For Chrome, Safari, and Opera */
+            -moz-appearance: none;
+            appearance: none;
+            background: url('./download.jpeg') no-repeat right ;
+            padding: 20px;
+            background-size: 12px;
+
+        }
+        .yes,.no,.maybe{
+        padding: 3px;
+
+        }
+        .prog{
+            padding: 3px;
+        }
+
+        textarea{
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 98%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }

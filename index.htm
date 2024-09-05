@@ -5,74 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body {
-            background-color: rgb(69, 168, 69);
-        }
-
-        .header {
-            height: 50px;
-            font-weight: 800;
-            font-size: 24px;
-
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .main-form-body {
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 1000px;
-            background-color: white;
-            padding-left: 2%;
-        }
-
-        input[type=text] {
-            width: 98%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #403d3d;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            outline: none;
-        }
-
-        .describe {
-            width: 95%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #403d3d;
-
-            transition: 0.5s;
-            outline: none;
-
-        }
-
-        .describe select {
-            appearance: none;
-            color: aqua;
-        }
-
-        input[type=text]:focus {
-            border: 3px solid #555;
-        }
-
-        label {
-            display: block;
-        }
-
-        select {
-            appearance: none;
-            background: url('./download.jpeg') no-repeat right center;
-         
-            padding: 20px;
-            background-size: 12px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
@@ -101,6 +35,80 @@
                 <option value="working">Working Professional</option>
                 <option value="seasoned">Seasoned Developer</option>
             </select>
+
+            <div class="recommend">
+                Would you recommend GeeksforGeeks to a friend ?
+            </div>
+
+            <div class="yes">
+                
+                <input type="radio" id="yes-radio">
+                <label for="yes-radio">Yes</label>
+            </div>
+             <div class="no">
+                
+                <input type="radio" id="no-radio">
+                <label for="no-radio">No</label>
+            </div>
+             <div class="maybe">
+                
+                <input type="radio" id="maybe-radio">
+                <label for="maybe-radio">Maybe</label>
+            </div>
+
+            <div class="lang">
+                Language and FrameWork Known (Check all that apply)
+            </div>
+
+            <div class="prog">
+               <input type="checkbox" id ='c' >
+               <label for="c">C</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='c++' >
+               <label for="c++">C++</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='c#' >
+               <label for="c#">C#</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='java' >
+               <label for="java">Java</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='python' >
+               <label for="python">Python</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='javascript' >
+               <label for="javascript">JavaScript</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='react' >
+               <label for="react">React</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='angular' >
+               <label for="angular">Angular</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='Django' >
+               <label for="django">Django</label>
+            </div>
+             <div class="prog">
+               <input type="checkbox" id ='Spring' >
+               <label for="spring">Spring</label>
+            </div>
+            <div class="comment">Any comments or suggestion </div>
+            <div class="input-field">
+                <textarea name="comment" id="comment" 
+                      placeholder="Enter your comment here">
+            </textarea>
+            </div>
+            <button>
+                Submit
+            </button>
         </form>
     </div>
 </body>
